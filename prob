@@ -1,0 +1,15 @@
+f= open('17 (2).txt')
+a = [int(s) for s in f]
+otv = []
+a_osob =min([x for x in a if 99<x<1000])
+
+for i in range(0, len(a)-2):
+    first = a[i]
+    second = a[i+1]
+    third = a[i+2]
+    u1 = (first % 2 == 0)+(second % 2 == 0) + (third % 2 == 0)
+    if u1<=2:
+        if (first + second + third) <= osob:
+            otv.append(first + second + third)
+
+print(len(otv),max(otv))
